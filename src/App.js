@@ -1,38 +1,25 @@
-import React from "react";
-import LandingPage from "./LandingPage";
+//App.js
+import React, { useRef } from "react";
+import "./App.css";
+import LandingPage from "./components/LandingPage";
+import CardsSection from "./components/CardsSection";
 
-function App() {
+const App = () => {
+  const introRef = useRef(null);
+
+  const scrollToIntro = () => {
+    introRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <div className="App">
-      <LandingPage />
+    <div>
+      <LandingPage onGetStartedClick={scrollToIntro} />
+      <div ref={introRef} className="intro-section">
+        <h1>Welcome to XPredict</h1>
+        <CardsSection />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
-
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;

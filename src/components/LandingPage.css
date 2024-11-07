@@ -1,0 +1,198 @@
+/* Matte black theme */
+.landing-page {
+  background-color: #1b1b1b;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Background video styling */
+.video-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+/* Product description styling 
+.product-description {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #ddd;
+}
+
+.product-description h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.product-description p {
+  font-size: 1.1rem;
+  max-width: 600px;
+}*/
+
+
+/* Product description box styling */
+.product-description-box {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid white;
+  border-radius: 10px;
+  text-align: center;
+  color: #ddd;
+  margin-bottom: 30px;
+}
+
+.product-description-box h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.product-description-box p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+/* Get Started button styling */
+.get-started-btn {
+  position: absolute;
+  bottom: 350px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px 30px;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+.get-started-btn:hover {
+  background-color: #333;
+  border-color: #ddd;
+}
+
+.intro-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #1b1b1b;
+  color: white;
+}
+
+.intro-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+/* Intro section styling
+.intro-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.intro-section h1 {
+  font-size: 2.5rem;
+}
+
+.intro-section p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.sign-in-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sign-in-btn:hover {
+  background-color: black;
+} */
+
+/* Cards Section */
+.cards-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: #1b1b1b;
+}
+
+/* Updated card width */
+.card {
+  width: 300px; /* Increased width from 300px to 400px */
+  height: 500x;
+  padding: 20px;
+  background-color: #222;
+  color: #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card h3 {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 10px 0;
+  flex-grow: 1;
+}
+
+/* Card button styling */
+.card-button {
+  font-size: 1rem;
+  color: #4a90e2;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: right;
+  align-self: flex-end;
+  padding: 5px;
+}
+
+.card-button:hover {
+  color: #a6d4f2;
+}
+
+.card-button.clicked {
+  color: #f5a623;
+}
